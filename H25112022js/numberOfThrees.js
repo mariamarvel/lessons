@@ -20,36 +20,35 @@ numberString(n);
 
 
 //3 способ
-//let a = prompt('Введите трёхзначное число:');
+let c = prompt('Введите трёхзначное число:');
 
-// function numberToObject(a) {
-//     if (a <= 999 && a > 0) {
-        // let b = {
-        //     hundreds() {
-        //         hundred = Math.floor(a / 100);//отделение наименьшего
-        //         document.write(hundred);
-        //         document.write(', ');
-        //     },
-        //     dozens() {
-        //         dozen = Math.floor((a - (hundred * 100)) / 10);
-        //         document.write(dozen);
-        //         document.write(', ');//return dozen;
-        //     },
-        //     units() {
-        //         unit = a - ((hundred * 100) + (dozen * 10));
-        //         document.write(unit);
-        //     }
-        // };
-        // b.hundreds();
-        // b.dozens();
-        // b.units();
+function numberToObject(c) {
+    if (c <= 999 && c > 0) {
+        let b = {
+            hundreds() {
+                hundred = Math.floor(c / 100);//отделение наименьшего
+                document.write(hundred);
+                document.write(', ');
+            },
+            dozens() {
+                dozen = Math.floor((c - (hundred * 100)) / 10);
+                document.write(dozen);
+                document.write(', ');//return dozen;
+            },
+            units() {
+                unit = c - ((hundred * 100) + (dozen * 10));
+                document.write(unit);
+            }
+        };
+        b.hundreds();
+        b.dozens();
+        b.units();
         
 
-//     };
-// };
+    };
+};
 
-//numberToObject(a);
-
+numberToObject(c);
 
 
 
