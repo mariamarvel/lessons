@@ -6,7 +6,7 @@ function example(numFirst, numSecond) {
         return (numFirst * numSecond);
     } else if (numFirst % 2 != 0 && numSecond % 2 != 0) {
         return (numFirst + numSecond);
-    } else if (numFirst % 2 != 0 ) {
+    } else if (numFirst % 2 != 0) {
         return numFirst;
     } else {
         return numSecond;
@@ -21,11 +21,8 @@ let arrTwo = [101, 2, 1, 10];
 let arrThree = [2, 1];
 function union(arrOne, arrTwo, arrThree) {
     let arrMid = arrOne.concat(arrTwo, arrThree);
-    alert(arrMid);
-
     arrMid = new Set(arrMid);
-    for (let number of arrMid) {
-        console.log(number);
-    }
+    return Array.from(arrMid);
 }
-union(arrOne, arrTwo, arrThree);
+
+alert(union(arrOne, arrTwo, arrThree));
