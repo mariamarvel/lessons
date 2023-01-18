@@ -1,0 +1,21 @@
+/* table {
+    border: 4px double #333; /* Рамка вокруг таблицы 
+    border-collapse: separate; /* Способ отображения границы 
+    width: 100%; /* Ширина таблицы 
+    border-spacing: 7px 11px; /* Расстояние между ячейками 
+   } */
+
+table {
+    border-collapse: collapse;
+    /* border-spacing: 0; не работает с collapse */
+}
+
+th {
+    padding: 20px 30px;
+    border: 1px solid #000;
+}
+
+td {
+    padding: 30px 40px;
+    border: 1px solid #000;
+}
